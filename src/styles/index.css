@@ -1,12 +1,16 @@
 
-/* 
+#container{
+    border: solid black;
+    background-color: rgba(202, 199, 195, 0.342);
+    display: grid;
+    padding: 5px 5px 5px 5px;
+    margin: 25px 25px 25px 25px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+h2{
+    text-align: center;
+    color: rgb(134, 125, 113);
+}
+button{
+    float: inline-end;
+}
