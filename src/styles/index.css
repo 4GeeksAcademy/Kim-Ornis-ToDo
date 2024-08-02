@@ -11,6 +11,11 @@ h2{
     text-align: center;
     color: rgb(134, 125, 113);
 }
+svg{
+    margin-top: 2px;
+    float: right;
+}
 button{
     float: inline-end;
 }
+

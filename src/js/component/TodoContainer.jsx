@@ -4,6 +4,12 @@ import{Todo} from "./Todo";
 export function TodoContainer () {
 	const [todos, setTodos] = useState([]);
 	const [task, setTask] = useState("");
+    const todoDelete = id => {
+        setTodos(todos.filter(todo => todo.id !==id))
+    }
+    const todoEdit = id => {
+        setTodos(todos.edit(todo => todo.id))
+    }
 
 	return (
         <>
@@ -28,9 +34,9 @@ export function TodoContainer () {
                 }}
                 />
 
-                {todos.map((todos) => (
+                {todos.map((todo) => (
         
-                    <Todo key={todos.id} todos={todos} />
+                    <Todo key={todo.id} todo={todo} todoDelete = {todoDelete} todoEdit = {todoEdit}/>
                     
                     ))}
             </div>
